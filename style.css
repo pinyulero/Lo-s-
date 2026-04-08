@@ -1,0 +1,493 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f9ff;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- HEADER / NAVIGATION ---------- */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a4d8c;
+}
+
+.logo span {
+  color: #4c9aff;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1a4d8c;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #1a4d8c;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0e3a6b;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #1a4d8c;
+  border: 2px solid #1a4d8c;
+}
+
+.btn-outline:hover {
+  background-color: #1a4d8c;
+  color: white;
+}
+
+.btn-light {
+  background-color: white;
+  color: #1a4d8c;
+  border: none;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #1a4d8c;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  margin-bottom: 40px;
+}
+
+.hero-buttons .btn-outline {
+  margin-left: 15px;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a4d8c;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+  background: linear-gradient(135deg, #e6f0ff, #ffffff);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hero-image p {
+  color: #1a4d8c;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ---------- SECTION TITLES ---------- */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: #1a4d8c;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+/* ---------- PROBLEMS GRID ---------- */
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.problem-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.problem-card h3 {
+  color: #1a4d8c;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.problem-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ---------- INFRASTRUCTURE SECTION ---------- */
+.infrastructure {
+  background: linear-gradient(135deg, #1a4d8c, #0e3a6b);
+  color: white;
+  padding: 60px;
+  border-radius: 20px;
+  margin: 60px 0;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.infra-content {
+  flex: 1;
+}
+
+.infra-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.infra-content p {
+  margin-bottom: 25px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+.infra-icon {
+  flex: 0.5;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+/* ---------- AUDIENCE SECTION ---------- */
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin: 40px 0;
+}
+
+.audience-item {
+  background: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 15px;
+  transition: all 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.audience-item:hover {
+  background: #1a4d8c;
+  color: white;
+  transform: scale(1.05);
+}
+
+.audience-item:hover h3 {
+  color: white;
+}
+
+.audience-item h3 {
+  color: #1a4d8c;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.audience-item p {
+  font-size: 14px;
+}
+
+/* ---------- FEATURES SECTION ---------- */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.feature {
+  text-align: center;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  color: #1a4d8c;
+  margin-bottom: 15px;
+}
+
+.feature p {
+  color: #666;
+}
+
+/* ---------- TOURISM SECTION ---------- */
+.tourism-section {
+  background: #f0f7ff;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.tourism-section h2 {
+  color: #1a4d8c;
+  margin-bottom: 20px;
+}
+
+.tourism-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #555;
+}
+
+.tourism-highlight {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #1a4d8c;
+}
+
+/* ---------- CALL TO ACTION SECTION ---------- */
+.cta {
+  background: #e6f0ff;
+  text-align: center;
+  padding: 60px;
+  border-radius: 20px;
+  margin: 60px 0;
+}
+
+.cta h2 {
+  font-size: 32px;
+  color: #1a4d8c;
+  margin-bottom: 20px;
+}
+
+.cta p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #1a2a3a;
+  color: white;
+  padding: 40px 0 20px;
+  margin-top: 60px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #4c9aff;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #4c9aff;
+}
+
+.footer-section p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #3a4a5a;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    margin: 0 10px;
+  }
+  
+  .infrastructure {
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .hero-stats {
+    justify-content: center;
+  }
+  
+  .hero-buttons .btn-outline {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cta {
+    padding: 40px 20px;
+  }
+  
+  .cta h2 {
+    font-size: 24px;
+  }
+  
+  .tourism-section {
+    padding: 30px 20px;
+  }
+}
